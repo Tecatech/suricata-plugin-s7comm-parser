@@ -1,0 +1,21 @@
+diff --git a/src/output.c b/src/output.c
+index f1d771e..c9acc1e 100755
+--- a/src/output.c
++++ b/src/output.c
+@@ -77,6 +77,7 @@
+ #include "output-json-rfb.h"
+ #include "output-json-mqtt.h"
+ #include "output-json-pgsql.h"
++#include "output-json-s7comm.h"
+ #include "output-json-template.h"
+ #include "output-json-template-rust.h"
+ #include "output-json-rdp.h"
+@@ -1116,6 +1117,8 @@ void OutputRegisterLoggers(void)
+     JsonMQTTLogRegister();
+     /* Pgsql JSON logger. */
+     JsonPgsqlLogRegister();
++    /* S7comm JSON logger. */
++    JsonS7commLogRegister();
+     /* Template JSON logger. */
+     JsonTemplateLogRegister();
+     /* Template Rust JSON logger. */

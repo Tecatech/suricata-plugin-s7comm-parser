@@ -1,0 +1,23 @@
+diff --git a/src/app-layer-protos.c b/src/app-layer-protos.c
+index d18d2f6..e94e6aa 100755
+--- a/src/app-layer-protos.c
++++ b/src/app-layer-protos.c
+@@ -114,6 +114,9 @@ const char *AppProtoToString(AppProto alproto)
+         case ALPROTO_PGSQL:
+             proto_name = "pgsql";
+             break;
++        case ALPROTO_S7COMM:
++            proto_name = "s7comm";
++            break;
+         case ALPROTO_TELNET:
+             proto_name = "telnet";
+             break;
+@@ -188,6 +191,8 @@ AppProto StringToAppProto(const char *proto_name)
+     if (strcmp(proto_name,"mqtt")==0) return ALPROTO_MQTT;
+     if (strcmp(proto_name, "pgsql") == 0)
+         return ALPROTO_PGSQL;
++    if (strcmp(proto_name, "s7comm") == 0)
++        return ALPROTO_S7COMM;
+     if (strcmp(proto_name, "telnet") == 0)
+         return ALPROTO_TELNET;
+     if (strcmp(proto_name,"template")==0) return ALPROTO_TEMPLATE;

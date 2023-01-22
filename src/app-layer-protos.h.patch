@@ -1,0 +1,12 @@
+diff --git a/src/app-layer-protos.h b/src/app-layer-protos.h
+index 0c29135..f888e6a 100755
+--- a/src/app-layer-protos.h
++++ b/src/app-layer-protos.h
+@@ -55,6 +55,7 @@ enum AppProtoEnum {
+     ALPROTO_RFB,
+     ALPROTO_MQTT,
+     ALPROTO_PGSQL,
++    ALPROTO_S7COMM,
+     ALPROTO_TELNET,
+     ALPROTO_TEMPLATE,
+     ALPROTO_TEMPLATE_RUST,

@@ -1,0 +1,12 @@
+diff --git a/src/suricata-common.h b/src/suricata-common.h
+index 49e82b8..dff972a 100755
+--- a/src/suricata-common.h
++++ b/src/suricata-common.h
+@@ -473,6 +473,7 @@ typedef enum {
+     LOGGER_TCP_DATA,
+     LOGGER_JSON_FLOW,
+     LOGGER_JSON_NETFLOW,
++    LOGGER_JSON_S7COMM,
+     LOGGER_STATS,
+     LOGGER_JSON_STATS,
+     LOGGER_PCAP,

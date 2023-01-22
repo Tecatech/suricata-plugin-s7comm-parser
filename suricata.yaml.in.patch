@@ -1,0 +1,12 @@
+diff --git a/suricata.yaml.in b/suricata.yaml.in
+index e946d0b..44a3833 100755
+--- a/suricata.yaml.in
++++ b/suricata.yaml.in
+@@ -299,7 +299,6 @@ outputs:
+         - pgsql:
+             enabled: no
+             # passwords: yes           # enable output of passwords
++        - s7comm
+         - stats:
+             totals: yes       # stats for all threads merged together
+             threads: no       # per thread stats

@@ -1,0 +1,20 @@
+diff --git a/src/detect-engine-register.c b/src/detect-engine-register.c
+index 488c5c4..5546917 100755
+--- a/src/detect-engine-register.c
++++ b/src/detect-engine-register.c
+@@ -232,6 +232,7 @@
+ #include "detect-quic-cyu-hash.h"
+ #include "detect-quic-cyu-string.h"
+ 
++#include "detect-s7comm-buffer.h"
+ #include "detect-template-buffer.h"
+ #include "detect-bypass.h"
+ #include "detect-ftpdata.h"
+@@ -678,6 +679,7 @@ void SigTableSetup(void)
+     DetectQuicCyuHashRegister();
+     DetectQuicCyuStringRegister();
+     
++    DetectS7commBufferRegister();
+     DetectTemplateBufferRegister();
+     DetectBypassRegister();
+     DetectConfigRegister();

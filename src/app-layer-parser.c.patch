@@ -1,0 +1,20 @@
+diff --git a/src/app-layer-parser.c b/src/app-layer-parser.c
+index c65a1c2..94b3811 100755
+--- a/src/app-layer-parser.c
++++ b/src/app-layer-parser.c
+@@ -52,6 +52,7 @@
+ #include "app-layer-nfs-tcp.h"
+ #include "app-layer-nfs-udp.h"
+ #include "app-layer-ntp.h"
++#include "app-layer-s7comm.h"
+ #include "app-layer-tftp.h"
+ #include "app-layer-ike.h"
+ #include "app-layer-krb5.h"
+@@ -1741,6 +1742,7 @@ void AppLayerParserRegisterProtocolParsers(void)
+     RegisterTemplateRustParsers();
+     RegisterRFBParsers();
+     RegisterMQTTParsers();
++    RegisterS7commParsers();
+     rs_pgsql_register_parser();
+     RegisterTemplateParsers();
+     RegisterRdpParsers();
