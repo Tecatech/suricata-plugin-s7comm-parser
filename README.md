@@ -1,4 +1,4 @@
-# Suricata plugin for parsing S7comm packet fields
+# Suricata plugin for parsing S7comm packet headers
 
 ```
 $ python3 server.py
